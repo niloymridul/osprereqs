@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://github.com/niloymridul/klmwdetect/assets/139414980/3787196e-c042-4313-bdcf-952365e8ad02" height="40%" width="40%" alt="Kali Linux logo"/>
+<img src="https://github.com/niloymridul/osprereqs/assets/139414980/14148678-3d21-4da3-acb6-9cfb9ddf9903" height="40%" width="40%" alt="Kali Linux logo"/>
 </p>
 
 <h1>osTicket - Prerequisites & Installation Process</h1>
