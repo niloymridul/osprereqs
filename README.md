@@ -3,7 +3,7 @@
 </p>
 
 <h1>osTicket - Prerequisites & Installation Process</h1>
-This tutorial details the steps of using and understanding packet-detecting and port-scanning software. <br />
+Welcome to the osTicket tutorial. This part of the tutorial will be detailing the setup of osTicket and usage of Microsoft Azure.<br />
 
 <h2>Environments & Softwares Used</h2>
 
