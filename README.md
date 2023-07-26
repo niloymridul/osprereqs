@@ -21,7 +21,12 @@ Before start installing, let's talk about osTicket, what is does, and why we nee
 Open source means that the source is made for anyone to use or alter and distribute as they see fit. 
 
 A support ticket system is software meant typically for help desk professionals and said software is used to process and monitor customers/client issues from the moment they come in until they manage to get some form of a resolution.
+</p>
 
+<p align="center">
+<img src="https://github.com/niloymridul/osprereqs/assets/139414980/fac9df13-bd34-42e8-8ba9-e6aab8b8683f)" height="40%" width="40%" alt="Azure logo"/>
+</p>
+<p>
 With this in mind, we are going to use Microsoft Azure (a cloud computing platform created and managed by Microsoft that provides various services online). If you hadn't already made an account, go ahead and do so. 
 
 [Click here to go to the official download webpage of Microsoft Azure and create an account!] https://azure.microsoft.com/en-us/free
