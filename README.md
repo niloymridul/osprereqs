@@ -24,7 +24,7 @@ A support ticket system is software meant typically for help desk professionals 
 </p>
 
 <p align="center">
-<img src="https://github.com/niloymridul/osprereqs/assets/139414980/fac9df13-bd34-42e8-8ba9-e6aab8b8683f)" height="40%" width="40%" alt="Azure logo"/>
+<img src="https://github.com/niloymridul/osprereqs/assets/139414980/fac9df13-bd34-42e8-8ba9-e6aab8b8683f)"  alt="Azure logo"/>
 </p>
 <p>
 With this in mind, we are going to use Microsoft Azure (a cloud computing platform created and managed by Microsoft that provides various services online). If you hadn't already made an account, go ahead and do so. 
