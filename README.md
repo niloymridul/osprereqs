@@ -119,14 +119,32 @@ Note: PHP is an open-source, server-side programming language that is used for c
 </p>
 
 - 10 - Go to sites -> Default in middle panel -> osTicket -> Browse*:80(http) to check the page. Note: IT IS IMPORTANT THAT when you follow this order of clicks the Default Web Site has an arrow next to it to keep in mind.
-  
+
+<p align="center">
+<img src="https://github.com/niloymridul/osprereqs/assets/139414980/5599189d-0a52-40b6-973b-e8ce88336593)" height="40%" width="40%" alt=" enable extension"/>
+</p>
+
 - 11 - As you can see it is a welcome page, but we will have to adjust our settings to change it osTicket. Go back to the IIS main menu and click PHP Manager. Go ahead and click enable or disable an extension. We have to enable the following extensions and please go ahead and type parts of them in the filter search bar.
 php_imap.dll,php_intl.dll,php_opcache.dll. Be sure to refresh the interface when you are done installing this.
 
 - 12 - We will rename a file and please follow this order to the exact path location and file name.
 From: C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php
 To: C:\inetpub\wwwroot\osTicket\include\ost-config.php
+
+<p align="center">
+<img src="https://github.com/niloymridul/osprereqs/assets/139414980/a0748b4d-7564-4cec-a0b7-b098fd6abc43" height="40%" width="40%" alt=" Change Permissions"/>
+</p>
+
+<p align="center">
+<img src="https://github.com/niloymridul/osprereqs/assets/139414980/33ecd531-e9ef-4b4a-9b1b-8781c212fba0" height="40%" width="40%" alt=" Everyone permissions"/>
+</p>
+
 - 13 - After renaming, we have to assign permissions to it. First, right-click on it to access its properties. Go to security and press advanced. First, we will remove all inheritance by clicking disable inheritance and then remove all. Then we will add a permission. Click on add which is above enable inheritance. Click Select a principal. Then we will click and type everyone in the object name box and then hit ok. Then we will grant everyone full control which will enable everyone. Then hit ok and exit out of the property windows.
+
+<p align="center">
+<img src="https://github.com/niloymridul/osprereqs/assets/139414980/bd1975b0-253d-41ba-8a24-ff6aa04d61a7" height="40%" width="40%" alt=" HeidiSQL"/>
+</p>
+
 - 14 - Click on this HeidiSQL file and click the link in the Word document file. Just keep clicking next if anything and launch HeidiSQL. Skip updates and create a new session in the root folder which can be done by clicking on the arrow next to New. Put the username and password as something you can remember. 
 - 15 - Open the newly made session. Create a new database called osTicket.
 - 16 - Now comes the setup of osTicket account. Click continue on the osTicket page. You do not actually have to put in an actual email but in this case, just make one up and be sure to remember it. In this case, you can follow my lead. Note that the default email is the email that receives requests and issues from customers.
