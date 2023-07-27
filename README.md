@@ -92,19 +92,37 @@ Now we start installing things one by one in the package we had. Unpack the pack
 
 
 <p align="center">
-<img src="https://github.com/niloymridul/osprereqs/assets/139414980/0a675821-ec23-48b3-b7a3-77f14ea8f032" height="70%" width="70%" alt=" Extract to PHP"/>
+<img src="https://github.com/niloymridul/osprereqs/assets/139414980/0a675821-ec23-48b3-b7a3-77f14ea8f032" height="40%" width="40%" alt=" Extract to PHP"/>
 </p>
 
 
 - 4 - Extract PHP 7.3.8 into the PHP folder that we just created in the C drive. Look at the image.
+
+<p align="center">
+<img src="https://github.com/niloymridul/osprereqs/assets/139414980/95b2d8b7-d84e-4e09-9f9e-113a61aca42b)" height="40%" width="40%" alt=" VC Redist"/>
+</p>
+  
 - 5 - Install VC redist.x86.exe.Install following this simple clicking order. Typical Setup -> Launch Configuration Wizard (after installation) -> Standard Configuration. To modify security settings, you will need to set up a root password. In this tutorial, we will Password1 but you may use whatever you wish.
-- 6 - I want you to type in IIS in the search bar. When you see Internet Information Service, run it as administrator. 
+- 6 - I want you to type in IIS in the search bar. When you see Internet Information Service, run it as administrator.
+
+<p align="center">
+<img src="https://github.com/niloymridul/osprereqs/assets/139414980/c96af318-9678-4ac1-b933-fba0c5620e99" alt=" Register PHP"/>
+</p>
+
 - 7 - When you see the interface, click PHP Manager. We need to register a PHP manager. Click on register new PHP version then click on the path to the PHP folder and click on the cgi folder. Then go back to the main menu interface and restart the server (Either by hitting restart or stopping it and then turning it on).
 Note: PHP is an open-source, server-side programming language that is used for customer relationship management systems such as osTicket and can be written into HTML which osTicket is used on.
 - 8 - Install osTicket. We will do it by copying the upload folder and putting it in c:\inetpub\wwwroot. We will then rename it to osTicket.
 - 9 - Reload IIS either by restarting or stopping and starting it again.
+
+<p align="center">
+<img src="https://github.com/niloymridul/osprereqs/assets/139414980/4eebd71d-d905-4f60-9cfd-2579bef96cb0" height="40%" width="40%" alt=" Browse 80"/>
+</p>
+
 - 10 - Go to sites -> Default in middle panel -> osTicket -> Browse*:80(http) to check the page. Note: IT IS IMPORTANT THAT when you follow this order of clicks the Default Web Site has an arrow next to it to keep in mind.
+  
 - 11 - As you can see it is a welcome page, but we will have to adjust our settings to change it osTicket. Go back to the IIS main menu and click PHP Manager. Go ahead and click enable or disable an extension. We have to enable the following extensions and please go ahead and type parts of them in the filter search bar.
+php_imap.dll,php_intl.dll,php_opcache.dll. Be sure to refresh the interface when you are done installing this.
+
 - 12 - We will rename a file and please follow this order to the exact path location and file name.
 From: C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php
 To: C:\inetpub\wwwroot\osTicket\include\ost-config.php
