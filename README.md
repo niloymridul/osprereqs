@@ -96,10 +96,8 @@ MySQL Username: root
 MySQL Password: Password1
 You will need to fill out the Admin User info so be sure to remember it when you fill out the information even if it isn't real. Then click Install now.
 
-- 17 - It should be complete by now. To check, browse your help desk login page: http://localhost/osTicket/scp/login.php. Feel free to log in and experiment.
+- 17 - It should be complete by now. To check, browse your help desk login page http://localhost/osTicket/scp/login.php. Feel free to log in and experiment.
 
-And check the End User osTicket URL:
-http://localhost/osTicket/ 
 
 - 18 - The last thing we need to do is clean up and reset permissions so no one can alter or adjust the website based set up.
 So delete the Setup folder so we can't alter any setup. The path is the following - C:\inetpub\wwwroot\osTicket\setup
