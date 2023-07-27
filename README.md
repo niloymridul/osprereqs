@@ -29,7 +29,7 @@ A support ticket system is software meant typically for help desk professionals 
 <p>
 With this in mind, we are going to use Microsoft Azure (a cloud computing platform created and managed by Microsoft that provides various services online). If you hadn't already made an account, go ahead and do so. 
 
-[Click here to go to the official download webpage of Microsoft Azure and create an account!] https://azure.microsoft.com/en-us/free
+[Click here to go to the official download webpage of Microsoft Azure and create an account!](https://azure.microsoft.com/en-us/free)
 
 Once you have logged in you will have to make a Resource Group. A resource group in Microsoft Azure is simply a container that holds resources/services such as virtual machines, web apps, databases, and more. It's important for staying organized and more important for dividing and protecting certain resources from different departments of companies.
 
