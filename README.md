@@ -167,6 +167,9 @@ You will need to fill out the Admin User info so be sure to remember it when you
 </p>
 
 - 18 - The last thing we need to do is clean up and reset permissions so no one can alter or adjust the website-based setup.
+</p>
+
+<p>
 So delete the Setup folder so we can't alter any setup. The path is the following - C:\inetpub\wwwroot\osTicket\setup
 We will also need to set Permissions to “Read” only: C:\inetpub\wwwroot\osTicket\include\ost-config.php
 
