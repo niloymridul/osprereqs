@@ -132,11 +132,11 @@ From: C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php
 To: C:\inetpub\wwwroot\osTicket\include\ost-config.php
 
 <p align="center">
-<img src="https://github.com/niloymridul/osprereqs/assets/139414980/a0748b4d-7564-4cec-a0b7-b098fd6abc43" height="40%" width="40%" alt=" Change Permissions"/>
+<img src="https://github.com/niloymridul/osprereqs/assets/139414980/a0748b4d-7564-4cec-a0b7-b098fd6abc43" alt=" Change Permissions"/>
 </p>
 
 <p align="center">
-<img src="https://github.com/niloymridul/osprereqs/assets/139414980/33ecd531-e9ef-4b4a-9b1b-8781c212fba0" height="40%" width="40%" alt=" Everyone permissions"/>
+<img src="https://github.com/niloymridul/osprereqs/assets/139414980/33ecd531-e9ef-4b4a-9b1b-8781c212fba0" alt=" Everyone permissions"/>
 </p>
 
 - 13 - After renaming, we have to assign permissions to it. First, right-click on it to access its properties. Go to security and press advanced. First, we will remove all inheritance by clicking disable inheritance and then remove all. Then we will add a permission. Click on add which is above enable inheritance. Click Select a principal. Then we will click and type everyone in the object name box and then hit ok. Then we will grant everyone full control which will enable everyone. Then hit ok and exit out of the property windows.
