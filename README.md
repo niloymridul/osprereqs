@@ -39,6 +39,10 @@ Going off from that point, we will need to create a Resource Group which is wher
 <p>
 We can name our resource group whatever we want but for this tutorial, we will call this osticketpractice. Now within our resource group, we will then create a virtual machine called Vm-osticket. We will be making a Windows 10 virtual machine.
 
+<p align="center">
+<img src="https://github.com/niloymridul/osprereqs/assets/139414980/7e8ad711-210a-452b-9a1b-e76f1ac05dd6" alt="Kali Linux logo"/>
+</p>
+
 The name isn't important but it should be something that you should be able to remember and we will be placing it in our resource group. While you create your username and password, be sure it is something that you can remember. Also, be sure to create a virtual network (which it will do automatically) and have it be placed inside the network group so we can connect with the virtual machine with no concern whatsoever along with any other virtual machines we choose to make when working on this program. Now wait a few minutes for it to be created.
 
 Now I want you to connect with this. Go to Virtual Machines, click on the newly made virtual machine, and observe the page. On the page, I want you to copy the IP address by right-clicking the line and pressing copy or pressing the copy button you can click on while hovering next to the IP address. Next, I want you to go ahead and go ahead open the application that you typically use to remotely open a desktop. 
