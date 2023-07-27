@@ -145,8 +145,13 @@ To: C:\inetpub\wwwroot\osTicket\include\ost-config.php
 <img src="https://github.com/niloymridul/osprereqs/assets/139414980/bd1975b0-253d-41ba-8a24-ff6aa04d61a7" height="70%" width="70%" alt="HeidiSQL"/>
 </p>
 
-- 14 - Click on this HeidiSQL file and click the link in the Word document file. Just keep clicking next if anything and launch HeidiSQL. Skip updates and create a new session in the root folder which can be done by clicking on the arrow next to New. Put the username and password as something you can remember. 
+- 14 - Click on this HeidiSQL file and click the link in the Word document file. Just keep clicking next if anything and launch HeidiSQL. Skip updates and create a new session in the root folder which can be done by clicking on the arrow next to New. Put the username and password as something you can remember.
+
+<p align="center">
+<img src="https://github.com/niloymridul/osprereqs/assets/139414980/db2133f8-ddf8-4fb4-b0b9-e4f2b2ad8de7" height="70%" width="70%" alt="HeidiSQL Database"/>
+</p>
 - 15 - Open the newly made session. Create a new database called osTicket.
+  
 - 16 - Now comes the setup of osTicket account. Click continue on the osTicket page. You do not actually have to put in an actual email but in this case, just make one up and be sure to remember it. In this case, you can follow my lead. Note that the default email is the email that receives requests and issues from customers.
 Helpdesk Name: Hugh Neutron
 Default Email: duckneutron@neutron.com
@@ -157,8 +162,11 @@ You will need to fill out the Admin User info so be sure to remember it when you
 
 - 17 - It should be complete by now. To check, browse your help desk login page http://localhost/osTicket/scp/login.php. Feel free to log in and experiment.
 
+<p align="center">
+<img src="https://github.com/niloymridul/osprereqs/assets/139414980/9c5b5cfe-0bbe-4e06-a156-84ffc445872e" height="70%" width="70%" alt="Complete!"/>
+</p>
 
-- 18 - The last thing we need to do is clean up and reset permissions so no one can alter or adjust the website based set up.
+- 18 - The last thing we need to do is clean up and reset permissions so no one can alter or adjust the website-based setup.
 So delete the Setup folder so we can't alter any setup. The path is the following - C:\inetpub\wwwroot\osTicket\setup
 We will also need to set Permissions to “Read” only: C:\inetpub\wwwroot\osTicket\include\ost-config.php
 
