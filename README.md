@@ -36,14 +36,21 @@ Once you have logged in you will have to make a Resource Group. A resource group
 Going off from that point, we will need to create a Resource Group which is where we will put our virtual machine. Now, similar to my VirtualBox tutorial, a virtual machine is an operating system created using software on one physical computer in order to emulate the functionality of another separate physical computer. Azure does this by having their own servers and systems that do this for us.
 </p>
 
+
+<p align="center">
+<img src="https://github.com/niloymridul/osprereqs/assets/139414980/7e8ad711-210a-452b-9a1b-e76f1ac05dd6" alt="Resource Group"/>
+</p>
+
 <p>
 We can name our resource group whatever we want but for this tutorial, we will call this osticketpractice. Now within our resource group, we will then create a virtual machine called Vm-osticket. We will be making a Windows 10 virtual machine.
 
+The name isn't important but it should be something that you should be able to remember and we will be placing it in our resource group. While you create your username and password, be sure it is something that you can remember. Also, be sure to create a virtual network (which it will do automatically) and have it be placed inside the network group so we can connect with the virtual machine with no concern whatsoever along with any other virtual machines we choose to make when working on this program. Now wait a few minutes for it to be created.
+
+
 <p align="center">
-<img src="https://github.com/niloymridul/osprereqs/assets/139414980/7e8ad711-210a-452b-9a1b-e76f1ac05dd6" alt="Kali Linux logo"/>
+<img src="https://github.com/niloymridul/osprereqs/assets/139414980/2407e40c-20f5-48f7-bdf9-acccc8325d0c" alt="Virtual Machine Azure"/>
 </p>
 
-The name isn't important but it should be something that you should be able to remember and we will be placing it in our resource group. While you create your username and password, be sure it is something that you can remember. Also, be sure to create a virtual network (which it will do automatically) and have it be placed inside the network group so we can connect with the virtual machine with no concern whatsoever along with any other virtual machines we choose to make when working on this program. Now wait a few minutes for it to be created.
 
 Now I want you to connect with this. Go to Virtual Machines, click on the newly made virtual machine, and observe the page. On the page, I want you to copy the IP address by right-clicking the line and pressing copy or pressing the copy button you can click on while hovering next to the IP address. Next, I want you to go ahead and go ahead open the application that you typically use to remotely open a desktop. 
 
@@ -54,6 +61,11 @@ The link down below will take you to a google drive page of all the needed files
 
 [Click here for the necessary installation files for OSTicket.](https://drive.google.com/drive/u/1/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6)
 If you have trouble installing these folders, you might need to install these files through Google Chrome.
+
+
+<p align="center">
+<img src="https://github.com/niloymridul/osprereqs/assets/139414980/1c002c38-30b5-474d-844e-40f22fb9656c" alt="Windows Features"/>
+</p>
 
 While it installs, we can go to the next step. We will need to enable certain features that are needed for osTicket to work.
 
@@ -77,6 +89,13 @@ Now we start installing things one by one in the package we had. Unpack the pack
 - 1 - PHP Manager for IIS. File name is PHPManagerForIIS)V1.5.0.msi
 - 2 - Rewrite Module. File name is rewrite_amd64_en-US.msi. 
 - 3 - Create C:\PHP
+
+
+<p align="center">
+<img src="https://github.com/niloymridul/osprereqs/assets/139414980/0a675821-ec23-48b3-b7a3-77f14ea8f032" height="70%" width="70%" alt=" Extract to PHP"/>
+</p>
+
+
 - 4 - Extract PHP 7.3.8 into the PHP folder that we just created in the C drive. Look at the image.
 - 5 - Install VC redist.x86.exe.Install following this simple clicking order. Typical Setup -> Launch Configuration Wizard (after installation) -> Standard Configuration. To modify security settings, you will need to set up a root password. In this tutorial, we will Password1 but you may use whatever you wish.
 - 6 - I want you to type in IIS in the search bar. When you see Internet Information Service, run it as administrator. 
