@@ -38,7 +38,7 @@ Going off from that point, we will need to create a Resource Group which is wher
 
 
 <p align="center">
-<img src="https://github.com/niloymridul/osprereqs/assets/139414980/7e8ad711-210a-452b-9a1b-e76f1ac05dd6" alt="Resource Group"/>
+<img src="https://github.com/niloymridul/osprereqs/assets/139414980/7e8ad711-210a-452b-9a1b-e76f1ac05dd6" height="70%" width="70%" alt="Resource Group"/>
 </p>
 
 <p>
@@ -48,7 +48,7 @@ The name isn't important but it should be something that you should be able to r
 
 
 <p align="center">
-<img src="https://github.com/niloymridul/osprereqs/assets/139414980/2407e40c-20f5-48f7-bdf9-acccc8325d0c" alt="Virtual Machine Azure"/>
+<img src="https://github.com/niloymridul/osprereqs/assets/139414980/2407e40c-20f5-48f7-bdf9-acccc8325d0c" height="70%" width="70%" alt="Virtual Machine Azure"/>
 </p>
 
 
@@ -64,7 +64,7 @@ If you have trouble installing these folders, you might need to install these fi
 
 
 <p align="center">
-<img src="https://github.com/niloymridul/osprereqs/assets/139414980/1c002c38-30b5-474d-844e-40f22fb9656c" alt="Windows Features"/>
+<img src="https://github.com/niloymridul/osprereqs/assets/139414980/1c002c38-30b5-474d-844e-40f22fb9656c" height="70%" width="70%" alt="Windows Features"/>
 </p>
 
 While it installs, we can go to the next step. We will need to enable certain features that are needed for osTicket to work.
@@ -92,7 +92,7 @@ Now we start installing things one by one in the package we had. Unpack the pack
 
 
 <p align="center">
-<img src="https://github.com/niloymridul/osprereqs/assets/139414980/0a675821-ec23-48b3-b7a3-77f14ea8f032" height="40%" width="40%" alt=" Extract to PHP"/>
+<img src="https://github.com/niloymridul/osprereqs/assets/139414980/0a675821-ec23-48b3-b7a3-77f14ea8f032" height="50%" width="50%" alt=" Extract to PHP"/>
 </p>
 
 
@@ -106,7 +106,7 @@ Now we start installing things one by one in the package we had. Unpack the pack
 - 6 - I want you to type in IIS in the search bar. When you see Internet Information Service, run it as administrator.
 
 <p align="center">
-<img src="https://github.com/niloymridul/osprereqs/assets/139414980/c96af318-9678-4ac1-b933-fba0c5620e99" alt=" Register PHP"/>
+<img src="https://github.com/niloymridul/osprereqs/assets/139414980/c96af318-9678-4ac1-b933-fba0c5620e99" height="70%" width="70%" alt=" Register PHP"/>
 </p>
 
 - 7 - When you see the interface, click PHP Manager. We need to register a PHP manager. Click on register new PHP version then click on the path to the PHP folder and click on the cgi folder. Then go back to the main menu interface and restart the server (Either by hitting restart or stopping it and then turning it on).
@@ -121,7 +121,7 @@ Note: PHP is an open-source, server-side programming language that is used for c
 - 10 - Go to sites -> Default in middle panel -> osTicket -> Browse*:80(http) to check the page. Note: IT IS IMPORTANT THAT when you follow this order of clicks the Default Web Site has an arrow next to it to keep in mind.
 
 <p align="center">
-<img src="https://github.com/niloymridul/osprereqs/assets/139414980/5599189d-0a52-40b6-973b-e8ce88336593)" height="40%" width="40%" alt=" enable extension"/>
+<img src="https://github.com/niloymridul/osprereqs/assets/139414980/5599189d-0a52-40b6-973b-e8ce88336593)" height="70%" width="70%" alt=" enable extension"/>
 </p>
 
 - 11 - As you can see it is a welcome page, but we will have to adjust our settings to change it osTicket. Go back to the IIS main menu and click PHP Manager. Go ahead and click enable or disable an extension. We have to enable the following extensions and please go ahead and type parts of them in the filter search bar.
@@ -132,17 +132,17 @@ From: C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php
 To: C:\inetpub\wwwroot\osTicket\include\ost-config.php
 
 <p align="center">
-<img src="https://github.com/niloymridul/osprereqs/assets/139414980/a0748b4d-7564-4cec-a0b7-b098fd6abc43" alt="Change Permissions"/>
+<img src="https://github.com/niloymridul/osprereqs/assets/139414980/a0748b4d-7564-4cec-a0b7-b098fd6abc43" height="70%" width="70%" alt="Change Permissions"/>
 </p>
 
 <p align="center">
-<img src="https://github.com/niloymridul/osprereqs/assets/139414980/33ecd531-e9ef-4b4a-9b1b-8781c212fba0" alt="Everyone permissions"/>
+<img src="https://github.com/niloymridul/osprereqs/assets/139414980/33ecd531-e9ef-4b4a-9b1b-8781c212fba0" height="70%" width="70%" alt="Everyone permissions"/>
 </p>
 
 - 13 - After renaming, we have to assign permissions to it. First, right-click on it to access its properties. Go to security and press advanced. First, we will remove all inheritance by clicking disable inheritance and then remove all. Then we will add a permission. Click on add which is above enable inheritance. Click Select a principal. Then we will click and type everyone in the object name box and then hit ok. Then we will grant everyone full control which will enable everyone. Then hit ok and exit out of the property windows.
 
 <p align="center">
-<img src="https://github.com/niloymridul/osprereqs/assets/139414980/bd1975b0-253d-41ba-8a24-ff6aa04d61a7" alt="HeidiSQL"/>
+<img src="https://github.com/niloymridul/osprereqs/assets/139414980/bd1975b0-253d-41ba-8a24-ff6aa04d61a7" height="70%" width="70%" alt="HeidiSQL"/>
 </p>
 
 - 14 - Click on this HeidiSQL file and click the link in the Word document file. Just keep clicking next if anything and launch HeidiSQL. Skip updates and create a new session in the root folder which can be done by clicking on the arrow next to New. Put the username and password as something you can remember. 
