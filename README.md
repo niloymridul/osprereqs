@@ -37,30 +37,30 @@ Going off from that point, we will need to create a Resource Group which is wher
 </p>
 
 <p>
-We can name our resource group whatever we want but for this tutorial we will call this osticketpractice. Now within our resource group, we will then create a virtual machine called Vm-osticket. We will be making a Windows 10 virtual machine.
+We can name our resource group whatever we want but for this tutorial, we will call this osticketpractice. Now within our resource group, we will then create a virtual machine called Vm-osticket. We will be making a Windows 10 virtual machine.
 
-The name isn't important but it should be something that you should be able to remember and we will be placing it in our resource group. While you create your username and password, be sure it something that you can remember. Also be sure to create a virtual network (which it will do automatically) and have it be placed inside the network group so we can connect with the virtual machine with no concern whatsoever along with any other virtual machines we choose to make when working on this program. Now wait a few minutes for it to be created.
+The name isn't important but it should be something that you should be able to remember and we will be placing it in our resource group. While you create your username and password, be sure it is something that you can remember. Also, be sure to create a virtual network (which it will do automatically) and have it be placed inside the network group so we can connect with the virtual machine with no concern whatsoever along with any other virtual machines we choose to make when working on this program. Now wait a few minutes for it to be created.
 
-Now I want you to connect with this. Go to Virtual Machines, click on the newly made virtual machine and observe the page. On the page, I want you to copy the IP address by right clicking the line and pressing copy or pressing the copy button you can click on while hovering next to the IP address. Next, I want you to go ahead and go ahead open the application that you typically use to remotely open a desktop. 
+Now I want you to connect with this. Go to Virtual Machines, click on the newly made virtual machine, and observe the page. On the page, I want you to copy the IP address by right-clicking the line and pressing copy or pressing the copy button you can click on while hovering next to the IP address. Next, I want you to go ahead and go ahead open the application that you typically use to remotely open a desktop. 
 
-For Windows user, you will need to type in the search bar Remote Desktop Connection. Afterwards, you will need to type in both username and password so in case it tries to login you in to another account you will need to click More Choices -> Use a different account. For Mac Users you will need to install a app from the app store such as remote desktop and then type in the IP address and credentials.
+For Windows users, you will need to type in the search bar Remote Desktop Connection. Afterward, you will need to type in both username and password so in case it tries to login you into another account you will need to click More Choices -> Use a different account. For Mac Users, you will need to install an app from the app store such as a remote desktop, and then type in the IP address and credentials.
 
-After you typed in your credentials, you will have to log in. The next thing we will need to do is install all of necessary files needed for osTicket to be set up.
-The link down below will take you to a google drive page of all the needed files but for now download them as a winrar zip file.
+After you typed in your credentials, you will have to log in. The next thing we will need to do is install all of the necessary files needed for osTicket to be set up.
+The link down below will take you to a google drive page of all the needed files but for now, download them as a Winrar zip file.
 
-Click here to for the necessary installation files for OSTicket. https://drive.google.com/drive/u/1/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6
+[Click here for the necessary installation files for OSTicket.](https://drive.google.com/drive/u/1/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6)
 If you have trouble installing these folders, you might need to install these files through Google Chrome.
 
-While it installs, we can go to the next step. We will need to enable certain features that is needed for osTicket to work.
+While it installs, we can go to the next step. We will need to enable certain features that are needed for osTicket to work.
 
 - IIS Management Conole - This will allow us to manage Web server features and individual sites such as the website of OSTicket
 - CGI (Common Gateway Interface) - Interface specification that enables web servers(osTicket is one) to execute programs to process website user requests such as submitting tickets.
-- Common HTTP Features - This adds on to the others as it enables things such as directory browsing and HTTP errors that are needed for osTicket.
+- Common HTTP Features - This adds to the others as it enables things such as directory browsing and HTTP errors that are needed for osTicket.
 
 Now in order to turn these on, you will need to click the following order. 
 Control Panel -> Programs -> Turn Windows Features on and off.
 
-Afterwards, just simply follow the folder path posted below. The X's mean that you need to click on them.
+Afterward, just simply follow the folder path posted below. The Xs mean that you need to click on them.
 Internet Information Services  -> World Wide Web Services -> Application Development Features ->
 [X] CGI
 [X] Common HTTP Features
@@ -73,40 +73,36 @@ Now we start installing things one by one in the package we had. Unpack the pack
 1 - PHP Manager for IIS. File name is PHPManagerForIIS)V1.5.0.msi
 2 - Rewrite Module. File name is rewrite_amd64_en-US.msi. 
 3 - Create C:\PHP
-4 - Extract PHP 7.3.8 into the PHP folder that we just created in the C drive. Look at image.
-5 - Install VC redist.x86.exe.Install following this simple clicking order. Typical Setup -> Launch Configuration Wizard (after install) -> Standard Configuration. For modify security settings, you will need to set up a root password. In this tutorial, we will Password1 but you may use whatever you wish.
+4 - Extract PHP 7.3.8 into the PHP folder that we just created in the C drive. Look at the image.
+5 - Install VC redist.x86.exe.Install following this simple clicking order. Typical Setup -> Launch Configuration Wizard (after installation) -> Standard Configuration. To modify security settings, you will need to set up a root password. In this tutorial, we will Password1 but you may use whatever you wish.
 6 - I want you to type in IIS in the search bar. When you see Internet Information Service, run it as administrator. 
-7 - When you see the interface, click PHP manager. We need to register a PHP manager. Click on register new PHP version and click on the path to PHP folder and click on the cgi folder. Then go back to the main menu interface and restart the server (Either by hitting restart or stopping it and then turning it on).
-Note: PHP is a open source, server side programming language that is used for customer relationship management systems such as osTicket and can be written into HTML which osTicket is used on.
+7 - When you see the interface, click PHP Manager. We need to register a PHP manager. Click on register new PHP version then click on the path to the PHP folder and click on the cgi folder. Then go back to the main menu interface and restart the server (Either by hitting restart or stopping it and then turning it on).
+Note: PHP is an open-source, server-side programming language that is used for customer relationship management systems such as osTicket and can be written into HTML which osTicket is used on.
 8 - Install osTicket. We will do it by copying the upload folder and putting it in c:\inetpub\wwwroot. We will then rename it to osTicket.
-9 - Reload IIS either by restarting or stop and starting it again.
-10 - Go to sites -> Default in middle panel -> osTicket -> Browse*:80(http) to check the page. Note: IT IS IMPORTANT THAT when you follow this order of clicks that Default Web Site has an arrow next to it to keep in mind.
-11 - As you can see it is a welcome page, but we will have to adjust our settings to change it osTicket. Go back to the IIS main menu and click PHP manager. Go ahead and click enable or disable an extension. We have to enable the following extensions and please go ahead and type parts of them in the filter search bar.
+9 - Reload IIS either by restarting or stopping and starting it again.
+10 - Go to sites -> Default in middle panel -> osTicket -> Browse*:80(http) to check the page. Note: IT IS IMPORTANT THAT when you follow this order of clicks the Default Web Site has an arrow next to it to keep in mind.
+11 - As you can see it is a welcome page, but we will have to adjust our settings to change it osTicket. Go back to the IIS main menu and click PHP Manager. Go ahead and click enable or disable an extension. We have to enable the following extensions and please go ahead and type parts of them in the filter search bar.
 12 - We will rename a file and please follow this order to the exact path location and file name.
 From: C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php
 To: C:\inetpub\wwwroot\osTicket\include\ost-config.php
-13 - After renaming, we have to assign permissions to it. First right click on it to access it properties. Go to security and press advanced. First we will remove all inheritance by clicking disable inheritance and then remove all. Then we will add a permission. Click on add which is above enable inheritance. Click select a principal. Then we will click and type everyone in the object name box and then hit ok. Then we will grant everyone full control which will enable everyone. Then hit ok and exit out of the property windows.
-14 - Click on this HeidiSQL file and click the link the word document file. Just keep clicking next if anything and launch HeidiSQL. Skip updates and create a new session in root folder which can be done by clicking on the arrow next to New. Put the user name and password as something you can remember. 
+13 - After renaming, we have to assign permissions to it. First, right-click on it to access its properties. Go to security and press advanced. First, we will remove all inheritance by clicking disable inheritance and then remove all. Then we will add a permission. Click on add which is above enable inheritance. Click Select a principal. Then we will click and type everyone in the object name box and then hit ok. Then we will grant everyone full control which will enable everyone. Then hit ok and exit out of the property windows.
+14 - Click on this HeidiSQL file and click the link in the Word document file. Just keep clicking next if anything and launch HeidiSQL. Skip updates and create a new session in the root folder which can be done by clicking on the arrow next to New. Put the username and password as something you can remember. 
 15 - Open the newly made session. Create a new database called osTicket.
-16 - Now comes the set up of osTicket account. Click continue on osTicket page. You do not actually have to put in an actual email but in this case, just make one up and be sure to remember it. In this case you can follow my lead. Note that the default email is the email that receives requests and issues from customers.
+16 - Now comes the setup of osTicket account. Click continue on the osTicket page. You do not actually have to put in an actual email but in this case, just make one up and be sure to remember it. In this case, you can follow my lead. Note that the default email is the email that receives requests and issues from customers.
 Helpdesk Name: Hugh Neutron
 Default Email: duckneutron@neutron.com
 MySQL Database: osTicket
 MySQL Username: root
 MySQL Password: Password1
-You will need to fill out the Admin User info so be sure to remember it when you fill out the information even if it isn't real.Then click install now.
+You will need to fill out the Admin User info so be sure to remember it when you fill out the information even if it isn't real. Then click Install now.
 
-17 - It should be complete by now. To check, browse to your help desk login page: http://localhost/osTicket/scp/login.php. Feel fre to log in and experiment.
+17 - It should be complete by now. To check, browse your help desk login page: http://localhost/osTicket/scp/login.php. Feel free to log in and experiment.
 
-And check the End Users osTicket URL:
+And check the End User osTicket URL:
 http://localhost/osTicket/ 
 
-18 - The last thing we need to do is clean up and reset permissions.
-Delete: C:\inetpub\wwwroot\osTicket\setup
-Set Permissions to “Read” only: C:\inetpub\wwwroot\osTicket\include\ost-config.php
-
-Notes:
-Browse to your help desk login page: http://localhost/osTicket/scp/login.php  
-End Users osTicket URL: http://localhost/osTicket/ 
+18 - The last thing we need to do is clean up and reset permissions so no one can alter or adjust the website based set up.
+So delete the Setup folder so we can't alter any setup. The path is the following - C:\inetpub\wwwroot\osTicket\setup
+We will also need to set Permissions to “Read” only: C:\inetpub\wwwroot\osTicket\include\ost-config.php
 
 </p>
