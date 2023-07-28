@@ -153,11 +153,11 @@ To: C:\inetpub\wwwroot\osTicket\include\ost-config.php
 - 15 - Open the newly made session. Create a new database called osTicket.
   
 - 16 - Now comes the setup of osTicket account. Click continue on the osTicket page. You do not actually have to put in an actual email but in this case, just make one up and be sure to remember it. In this case, you can follow my lead. Note that the default email is the email that receives requests and issues from customers.
-Helpdesk Name: Hugh Neutron
-Default Email: duckneutron@neutron.com
-MySQL Database: osTicket
-MySQL Username: root
-MySQL Password: Password1
+- Helpdesk Name: Hugh Neutron
+- Default Email: duckneutron@neutron.com
+- MySQL Database: osTicket
+- MySQL Username: root
+- MySQL Password: Password1
 You will need to fill out the Admin User info so be sure to remember it when you fill out the information even if it isn't real. Then click Install now.
 
 - 17 - It should be complete by now. To check, browse your help desk login page http://localhost/osTicket/scp/login.php. Feel free to log in and experiment.
